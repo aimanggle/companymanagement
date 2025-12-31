@@ -15,6 +15,9 @@ class Authenticate
      */
     public function handle(Request $request, Closure $next): Response
     {
+        if (!session()->has('user_id')) {
+            return redirect()->route('login')->with('error', 'Please login first.');
+        }
         return $next($request);
     }
 }
