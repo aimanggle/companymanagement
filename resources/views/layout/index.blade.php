@@ -13,7 +13,7 @@
     
     <!-- Navigation Bar -->
     @if(session()->has('user_id'))
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ route('companies.index') }}">
                 <i class="bi bi-building-fill"></i> Company Management
